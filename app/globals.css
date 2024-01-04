@@ -40,7 +40,7 @@
     }
     
     .btn {
-        @apply w-32 h-12 bg-transparent border-2 border-white rounded-lg text-lg text-white font-medium ml-10 transition;
+        @apply w-32 h-12 bg-transparent border-2 border-white rounded-lg text-lg text-white font-medium ml-10 transition cursor-pointer;
     }
     
     .btn:hover {
