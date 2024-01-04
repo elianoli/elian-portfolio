@@ -13,25 +13,22 @@ const Navbar = () => {
         <h2 className="text-3xl text-white">
           <a href="#">./&nbsp;elian</a>
         </h2>
-        <div id="menu" className="hidden md:block">
+        <div id="menu" className={`${toggle ? "block" : "hidden"} md:block`}>
           <ul className="links">
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
           </ul>
         </div>
-        <button className="btn" onClick={() => setToggle(!toggle)}>
-          Hire&nbsp;me
-        </button>
+        <button className="btn">Hire&nbsp;me</button>
         <svg
           id="menu-button"
           xmlns="<http://www.w3.org/2000/svg>"
-          className={`h-8 w-8 cursor-pointer md:${
-            toggle ? "block" : "hidden"
-          } block`}
+          className="h-8 w-8 cursor-pointer md:hidden"
           fill="none"
           viewBox="0 0 24 24"
           stroke="#fff"
+          onClick={() => setToggle(!toggle)}
         >
           <path
             stroke-linecap="round"
