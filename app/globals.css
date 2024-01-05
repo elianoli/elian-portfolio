@@ -20,7 +20,7 @@
     }
 
     .nav {
-        @apply fixed top-0 left-0 w-full px-24 py-5 flex justify-between items-center z-20;
+        @apply fixed top-0 left-0 w-full sm:px-24 px-10 py-5 flex flex-wrap justify-between items-center z-20;
     }
     
     .links a {
@@ -40,7 +40,7 @@
     }
     
     .btn {
-        @apply w-32 h-12 bg-transparent border-2 border-white rounded-lg text-lg text-white font-medium ml-10 transition;
+        @apply w-32 h-12 bg-transparent border-2 border-white rounded-lg text-lg text-white font-medium ml-10 transition cursor-pointer;
     }
     
     .btn:hover {
