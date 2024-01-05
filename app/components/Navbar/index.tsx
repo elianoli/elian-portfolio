@@ -10,21 +10,44 @@ const Navbar = () => {
   return (
     <>
       <nav className="nav">
-        <h2 className="text-3xl text-white">
+        {/* Logo */}
+        <h2 className="text-3xl text-white order-1">
           <a href="#">./&nbsp;elian</a>
         </h2>
-        <div id="menu" className={`${toggle ? "block" : "hidden"} md:block`}>
-          <ul className="links">
+
+        {/* Links archors */}
+        <div
+          className={`${
+            toggle ? "block" : "hidden"
+          } md:block order-3 flex justify-center  basis-full md:basis-auto`}
+        >
+          <ul
+            className={`links ${
+              toggle ? "flex flex-col md:flex-row flex-wrap order-2" : ""
+            }`}
+          >
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
           </ul>
         </div>
-        <button className="btn">Hire&nbsp;me</button>
+
+        {/* Empty div */}
+        <div className="md:basis-auto order-1"></div>
+
+        {/* Hire me button */}
+        <div
+          className={`order-1 md:order-4 flex justify-center ${
+            toggle ? "basis-full md:basis-auto order-4" : ""
+          }`}
+        >
+          <button className="btn">Hire&nbsp;me</button>
+        </div>
+
+        {/* Hamburger menu */}
         <svg
-          id="menu-button"
           xmlns="<http://www.w3.org/2000/svg>"
-          className="h-8 w-8 cursor-pointer md:hidden"
+          className="h-8 w-8 cursor-pointer md:hidden order-1"
           fill="none"
           viewBox="0 0 24 24"
           stroke="#fff"

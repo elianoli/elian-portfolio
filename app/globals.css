@@ -20,7 +20,7 @@
     }
 
     .nav {
-        @apply fixed top-0 left-0 w-full px-24 py-5 flex justify-between items-center z-20;
+        @apply fixed top-0 left-0 w-full sm:px-24 px-10 py-5 flex flex-wrap justify-between items-center z-20;
     }
     
     .links a {
