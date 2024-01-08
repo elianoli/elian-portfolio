@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="nav">
+      <nav className={`nav ${toggle ? "gap-9 backdrop-blur rounded-xl" : ""}`}>
         {/* Logo */}
         <h2 className="text-3xl text-white order-1">
           <a href="#">./&nbsp;elian</a>
@@ -23,7 +23,7 @@ const Navbar = () => {
         >
           <ul
             className={`links ${
-              toggle ? "flex flex-col md:flex-row flex-wrap order-2" : ""
+              toggle ? "flex flex-col md:flex-row flex-wrap gap-2" : ""
             }`}
           >
             <a href="#">About</a>
