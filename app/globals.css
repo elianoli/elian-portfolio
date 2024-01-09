@@ -12,7 +12,7 @@
 
 @layer components {
     .background {
-        @apply bg-bk-image flex justify-center items-center w-screen h-screen bg-cover bg-center bg-no-repeat;
+        @apply bg-bk-image flex justify-center items-center w-screen h-screen bg-cover bg-center bg-no-repeat fixed -z-10;
     } 
 
     .background-text {
