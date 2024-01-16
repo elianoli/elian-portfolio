@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const TOGGLE_START: boolean = false;
@@ -12,7 +13,7 @@ const Navbar = () => {
       <nav className={`nav ${toggle ? "gap-9 backdrop-blur rounded-xl" : ""}`}>
         {/* Logo */}
         <h2 className="text-3xl text-white order-1">
-          <a href="#">./&nbsp;elian</a>
+          <Link href={"/#"}>ELIAN</Link>
         </h2>
 
         {/* Links archors */}
@@ -26,9 +27,9 @@ const Navbar = () => {
               toggle ? "flex flex-col md:flex-row flex-wrap gap-2" : ""
             }`}
           >
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <Link href={"/#about"}>About</Link>
+            <Link href={"/#projects"}>Projects</Link>
+            <Link href={"/#contact"}>Contact</Link>
           </ul>
         </div>
 
